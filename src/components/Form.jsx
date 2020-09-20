@@ -18,8 +18,6 @@ const Form = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log(config.apiUrl);
-    console.log(formData);
     const response = await axios.post(`${config.apiUrl}`, {
       name,
       email,
@@ -27,7 +25,7 @@ const Form = () => {
       message,
     });
     console.log(response);
-    console.log(formData);
+    window.location = "/";
   };
   return (
     <form className="form" noValidate onSubmit={onSubmit}>

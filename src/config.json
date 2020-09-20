@@ -1,3 +1,3 @@
 {
-    "apiUrl": "https://node-mailer-react-server.herokuapp.com/sendemail"
+    "apiUrl": "https://nodemailer-react-email.herokuapp.com/sendemail"
 }
