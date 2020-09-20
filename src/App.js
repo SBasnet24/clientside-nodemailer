@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./components/Form";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => (
+  <div className="container" style={{ marginTop: "80px" }}>
+    <div className="row">
+      <div className="col-md-8 m-auto">
+        <h1 className="display-4 ">Contact Form</h1>
+        <Form />
+      </div>
     </div>
-  );
-}
+  </div>
+);
 
 export default App;
